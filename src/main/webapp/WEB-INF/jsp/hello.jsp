@@ -10,9 +10,11 @@
   <body>
   	<div id="wrap">
 	    <%@ include file="/WEB-INF/jsp/NavigationBar/navbar.jsp" %>
-		<div class="container">
-	    	<h1>Hello - Spring Application</h1>
-	    	<p>Greetings, it is now <c:out value="${now}"/></p>
+	    <div class="container" id="header">
+	    <%@ include file="/WEB-INF/jsp/header/header.jsp" %>
+	    </div>
+		<div class="container" id="search">
+	    	<%@ include file="/WEB-INF/jsp/body/search.jsp" %>
 	    </div>
 	    <div id="push"></div>
 	</div>
