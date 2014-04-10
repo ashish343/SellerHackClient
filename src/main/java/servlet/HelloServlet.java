@@ -26,7 +26,7 @@ import org.w3c.dom.NodeList;
 
 @WebServlet(
         name = "MyServlet", 
-        urlPatterns = {"/search"}
+        urlPatterns = {"/hello"}
     )
 public class HelloServlet extends HttpServlet {
 	
@@ -34,7 +34,7 @@ public class HelloServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
     	System.out.print("Incoming ajax request");
-    	String targetURL = "http://asishsi-1.desktop.amazon.com:8983/solr/#/collection1/query";
+    	String targetURL = "http://asishsi-1.desktop.amazon.com:8983/solr/collection1/select";
     	String urlParameters = "q=" + URLEncoder.encode(req.getParameter("q"), "UTF-8");
     	URL url;
         HttpURLConnection connection = null;  

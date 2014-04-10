@@ -22,7 +22,7 @@ $(document).ready(function(){
 	}
 	
 	var getResults = function(query) {
-		$.ajax("/search",{data:{q:query}, dataType:"json", success:handleResp});
+		$.ajax("/hello",{data:{q:query}, dataType:"json", success:handleResp});
 	}
 
 	$("#searchForm").submit(function(e) {
