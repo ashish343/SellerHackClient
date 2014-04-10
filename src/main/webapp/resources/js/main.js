@@ -26,7 +26,7 @@ $(document).ready(function(){
 	}
 
 	$("#searchForm").submit(function() {
-		$("#results").html();
+		$("#results").html("<div class='spinner'></div>");
 		var query = $("#query").val();	
 		getResults(query);
 	});
