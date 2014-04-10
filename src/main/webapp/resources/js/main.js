@@ -25,7 +25,8 @@ $(document).ready(function(){
 		$.ajax("/search",{data:{q:query}, dataType:"json", success:handleResp});
 	}
 
-	$("#searchForm").submit(function() {
+	$("#searchForm").submit(function(e) {
+		e.preventDefault();
 		$("#results").html("<div class='spinner'></div>");
 		var query = $("#query").val();	
 		getResults(query);
