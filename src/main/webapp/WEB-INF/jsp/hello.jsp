@@ -16,6 +16,8 @@
 		<div class="container" id="search">
 	    	<%@ include file="/WEB-INF/jsp/body/search.jsp" %>
 	    </div>
+	    <div class="container" id="results">
+	    </div>
 	    <div id="push"></div>
 	</div>
 	<%@ include file="/WEB-INF/jsp/footer/footer.jsp" %>
